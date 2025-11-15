@@ -200,8 +200,8 @@ nav ul li a:hover::after {
   }
 
   .hero-section img {
-    width: 50%;
-    height: 80%;
+    width: 80%;
+    height: auto;
     margin: 0 auto;
     border-radius: 1.5rem;
   }
@@ -226,5 +226,63 @@ nav ul li a:hover::after {
 @media (max-width: 740px) {
   .header-section {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .header-section {
+    height: 8%;
+    padding: 2rem 5rem;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .header-section .logo {
+    width: 12rem;
+  }
+
+  .header-section .header-btn {
+    padding: 6px 14px;
+    font-size: 1.2rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 3rem;
+    padding: 2rem 0;
+  }
+
+  .hero-section .hero-desc {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 10rem;
+    text-align: center;
+  }
+
+  .hero-section .hero-desc #text1 {
+    font-size: 1.2rem;
+  }
+
+  .hero-section .hero-desc h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+  }
+
+  .hero-section .hero-desc #text2 {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+  }
+
+  .hero-section .hero-desc a {
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
+
+  .hero-section img {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
   }
 }
